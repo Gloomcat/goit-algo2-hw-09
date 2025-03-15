@@ -143,17 +143,14 @@ if __name__ == "__main__":
     print("Hill Climbing:")
     hc_solution, hc_value, hc_trajectory = hill_climbing(sphere_function, bounds)
     print("Розв'язок:", hc_solution, "Значення:", hc_value)
-    # visualize_trajectory_3d(bounds, hc_trajectory)
 
     print("\nRandom Local Search:")
     rls_solution, rls_value, rls_trajectory = random_local_search(sphere_function, bounds)
     print("Розв'язок:", rls_solution, "Значення:", rls_value)
-    # visualize_trajectory_3d(bounds, rls_trajectory)
 
     print("\nSimulated Annealing:")
     sa_solution, sa_value, sa_trajectory = simulated_annealing(sphere_function, bounds)
     print("Розв'язок:", sa_solution, "Значення:", sa_value)
-    # visualize_trajectory_3d(bounds, sa_trajectory)
 
     visualize_trajectories_3d(
         bounds,
